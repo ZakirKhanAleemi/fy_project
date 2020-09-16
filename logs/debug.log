@@ -1,0 +1,196 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 18046
+"GET / HTTP/1.1" 200 18046
+"GET /static/css/style.default.css HTTP/1.1" 200 57337
+"GET /static/css/style.default.css HTTP/1.1" 200 57337
+"GET /static/css/custom.css HTTP/1.1" 304 0
+"GET /static/css/custom.css HTTP/1.1" 304 0
+"GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31396
+"GET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 31396
+"GET /static/vendor/owl.carousel/assets/owl.carousel.css HTTP/1.1" 200 4744
+"GET /static/vendor/owl.carousel/assets/owl.carousel.css HTTP/1.1" 200 4744
+"GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140930
+"GET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 140930
+"GET /static/vendor/owl.carousel/assets/owl.theme.default.css HTTP/1.1" 200 1380
+"GET /static/vendor/owl.carousel/assets/owl.theme.default.css HTTP/1.1" 200 1380
+"GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 86927
+"GET /static/vendor/jquery/jquery.min.js HTTP/1.1" 200 86927
+"GET /static/vendor/jquery.cookie/jquery.cookie.js HTTP/1.1" 200 3121
+"GET /static/vendor/jquery.cookie/jquery.cookie.js HTTP/1.1" 200 3121
+"GET /static/vendor/popper.js/umd/popper.min.js HTTP/1.1" 200 20337
+"GET /static/vendor/popper.js/umd/popper.min.js HTTP/1.1" 200 20337
+"GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 50731
+"GET /static/vendor/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 50731
+"GET /static/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 200 44342
+"GET /static/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 200 44342
+"GET /static/vendor/bootstrap-select/js/bootstrap-select.min.js HTTP/1.1" 200 44448
+"GET /static/vendor/bootstrap-select/js/bootstrap-select.min.js HTTP/1.1" 200 44448
+"GET /static/img/logo.png HTTP/1.1" 200 10596
+"GET /static/img/logo.png HTTP/1.1" 200 10596
+"GET /static/js/front.js HTTP/1.1" 200 8053
+"GET /static/js/front.js HTTP/1.1" 200 8053
+"GET /static/img/jobpic.jpg HTTP/1.1" 200 88342
+"GET /static/img/jobpic.jpg HTTP/1.1" 200 88342
+"GET /static/img/company.jpg HTTP/1.1" 200 18778
+"GET /static/img/company.jpg HTTP/1.1" 200 18778
+"GET /static/img/meeting101.jpg HTTP/1.1" 200 119817
+"GET /static/img/meeting101.jpg HTTP/1.1" 200 119817
+Not Found: /favicon.png
+Not Found: /favicon.png
+"GET /favicon.png HTTP/1.1" 404 4396
+"GET /favicon.png HTTP/1.1" 404 4396
+"GET /employer/register HTTP/1.1" 200 8293
+"GET /employer/register HTTP/1.1" 200 8293
+"GET /static/img/logo.png HTTP/1.1" 304 0
+"GET /static/img/logo.png HTTP/1.1" 304 0
+Not Found: /employer/favicon.png
+Not Found: /employer/favicon.png
+"GET /employer/favicon.png HTTP/1.1" 404 4423
+"GET /employer/favicon.png HTTP/1.1" 404 4423
+"POST /employer/register HTTP/1.1" 200 9165
+"POST /employer/register HTTP/1.1" 200 9165
+"POST /employer/register HTTP/1.1" 302 0
+"POST /employer/register HTTP/1.1" 302 0
+"GET /login HTTP/1.1" 200 6443
+"GET /login HTTP/1.1" 200 6443
+"GET /static/img/logo.png HTTP/1.1" 304 0
+"GET /static/img/logo.png HTTP/1.1" 304 0
+"POST /login HTTP/1.1" 302 0
+"POST /login HTTP/1.1" 302 0
+"GET / HTTP/1.1" 200 18558
+"GET / HTTP/1.1" 200 18558
+Internal Server Error: /employer/jobs/create
+Traceback (most recent call last):
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/defaulttags.py", line 1021, in find_library
+    return parser.libraries[name]
+KeyError: 'staticfiles'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/defaulttags.py", line 1078, in load
+    lib = find_library(parser, name)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/defaulttags.py", line 1025, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'staticfiles' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+is_already_applied
+l10n
+log
+rest_framework
+static
+tz
+Internal Server Error: /employer/jobs/create
+Traceback (most recent call last):
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/defaulttags.py", line 1021, in find_library
+    return parser.libraries[name]
+KeyError: 'staticfiles'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/core/handlers/base.py", line 143, in _get_response
+    response = response.render()
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/response.py", line 81, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/response.py", line 63, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/loaders/base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/base.py", line 477, in parse
+    raise self.error(token, e)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/base.py", line 475, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/defaulttags.py", line 1078, in load
+    lib = find_library(parser, name)
+  File "/home/eagle/anaconda3/lib/python3.6/site-packages/django/template/defaulttags.py", line 1025, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'staticfiles' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+is_already_applied
+l10n
+log
+rest_framework
+static
+tz
+"GET /employer/jobs/create HTTP/1.1" 500 169085
+"GET /employer/jobs/create HTTP/1.1" 500 169085
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 4396
+"GET /favicon.ico HTTP/1.1" 404 4396
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 18558
+"GET / HTTP/1.1" 200 18558
+"GET /static/img/logo.png HTTP/1.1" 304 0
+"GET /static/img/logo.png HTTP/1.1" 304 0
